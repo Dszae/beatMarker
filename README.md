@@ -80,6 +80,7 @@ Window > Extensions (Legacy) > BeatMarker
 3. Open BeatMarker.
 4. Click `Choose file`.
 5. Select the same audio file used by the After Effects layer.
+  The file is decoded and analyzed locally in the panel; it is not uploaded.
 6. Leave `BPM override` empty or set it to `0` for automatic tempo estimation.
 7. Click `Analyze beats`.
 8. Check the waveform and beat lines.
