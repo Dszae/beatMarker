@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1920, height=1080">
+  <link rel="stylesheet" href="promo.css">
+  <script src="assets/gsap.min.js"></script>
+</head>
+<body>
+  <div id="root" data-composition-id="main" data-start="0" data-duration="30" data-width="1920" data-height="1080">
+    <audio id="music" src="assets/bed.wav" data-start="0" data-duration="30" data-track-index="5" data-volume="0.35"></audio>
+    <audio id="vo-hook" src="assets/vo-hook.wav" data-start="0" data-duration="3.072" data-track-index="6" data-volume="1"></audio>
+    <audio id="vo-problem" src="assets/vo-problem.wav" data-start="4" data-duration="3.456" data-track-index="6" data-volume="1"></audio>
+    <audio id="vo-introduce" src="assets/vo-introduce.wav" data-start="8" data-duration="3.328" data-track-index="6" data-volume="1"></audio>
+    <audio id="vo-demo" src="assets/vo-demo.wav" data-start="14" data-duration="2.88" data-track-index="6" data-volume="1"></audio>
+    <audio id="vo-result" src="assets/vo-result.wav" data-start="24" data-duration="4.928" data-track-index="6" data-volume="1"></audio>
+    <audio id="vo-close" src="assets/vo-close.wav" data-start="28" data-duration="1.664" data-track-index="7" data-volume="1"></audio>
+    <div id="hook" data-composition-id="hook" data-composition-src="compositions/hook.html" data-start="0" data-duration="4" data-track-index="0" data-width="1920" data-height="1080"></div>
+    <div id="problem" data-composition-id="problem" data-composition-src="compositions/problem.html" data-start="4" data-duration="4" data-track-index="0" data-width="1920" data-height="1080"></div>
+    <div id="introduce" data-composition-id="introduce" data-composition-src="compositions/introduce.html" data-start="8" data-duration="6" data-track-index="0" data-width="1920" data-height="1080"></div>
+    <div id="demo" data-composition-id="demo" data-composition-src="compositions/demo.html" data-start="14" data-duration="10" data-track-index="0" data-width="1920" data-height="1080"></div>
+    <div id="result" data-composition-id="result" data-composition-src="compositions/result.html" data-start="24" data-duration="4" data-track-index="0" data-width="1920" data-height="1080"></div>
+    <div id="close" data-composition-id="close" data-composition-src="compositions/close.html" data-start="28" data-duration="2" data-track-index="0" data-width="1920" data-height="1080"></div>
+  </div>
+  <script>
+    window.__timelines["main"] = gsap.timeline({ paused: true });
+  </script>
+</body>
+</html>

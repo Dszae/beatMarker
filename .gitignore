@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+Thumbs.db
+.hyperframes/
+.thumbnails/
+waveform-cache/
+.waveform-cache/
+snapshots/
+showcase-video/.hyperframes/
+showcase-video/.thumbnails/
+showcase-video/snapshots/

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' blob: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src 'self' blob: data: file:">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BeatMarker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="panel">
+    <header class="header">
+      <div>
+        <p class="eyebrow">AUDIO TO EDIT</p>
+        <h1>BeatMarker</h1>
+      </div>
+      <span class="version">v1.0</span>
+    </header>
+
+    <section class="target-row">
+      <div>
+        <span class="label">AE target</span>
+        <strong id="target">Checking active composition...</strong>
+      </div>
+      <button id="refresh-target" class="icon-button" title="Refresh active target">↻</button>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <span class="step">01</span>
+          <h2>Load edit audio</h2>
+        </div>
+        <label class="file-button" for="audio-file">Choose file</label>
+        <input id="audio-file" type="file" accept="audio/*">
+      </div>
+      <div class="file-name" id="file-name">No audio loaded</div>
+      <canvas id="waveform" aria-label="Audio waveform"></canvas>
+    </section>
+
+    <section class="section controls">
+      <div class="section-heading">
+        <div><span class="step">02</span><h2>Lock the grid</h2></div>
+        <button id="analyze" class="primary" disabled>Analyze beats</button>
+      </div>
+      <div class="control-grid">
+        <label>BPM override <input id="bpm" type="number" min="0" max="300" step="0.1" placeholder="Auto"></label>
+        <label>Start offset <input id="offset" type="number" step="1" value="0"><small>milliseconds</small></label>
+      </div>
+      <label class="range-label">Detection sensitivity <output id="sensitivity-value">0.55</output>
+        <input id="sensitivity" type="range" min="0" max="1" step="0.01" value="0.55">
+      </label>
+      <p class="hint">Leave BPM at 0 to estimate tempo automatically. Use a small offset when the edit starts before the downbeat.</p>
+    </section>
+
+    <section class="section export">
+      <div class="section-heading">
+        <div><span class="step">03</span><h2>Send to After Effects</h2></div>
+      </div>
+      <label class="check"><input id="replace" type="checkbox" checked> Replace existing markers</label>
+      <div class="actions">
+        <button id="write" class="primary wide" disabled>Write beat markers</button>
+        <button id="clear" class="secondary" title="Clear markers">Clear</button>
+      </div>
+    </section>
+
+    <div id="status" class="status">Select an audio file to begin.</div>
+    <footer>Markers land on the selected audio layer. With no audio layer selected, they land on the composition.</footer>
+  </main>
+  <script src="panel.js"></script>
+</body>
+</html>
