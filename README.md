@@ -272,6 +272,7 @@ The panel asks the user to choose the audio file separately instead of decoding 
 ## Showcase Video
 
 The editable showcase project is in `showcase-video/`.
+It is optional and is not required to install or use the After Effects panel.
 
 Rendered video output is not included in the repository. Use the showcase project's
 render command to generate the promotional video locally.
