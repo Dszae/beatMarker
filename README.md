@@ -76,7 +76,7 @@ Window > Extensions (Legacy) > BeatMarker
 ## How To Use It
 
 1. Open the composition you want to edit.
-2. Select the audio layer in the Timeline panel.
+2. If you want markers on an audio layer, select it in the Timeline panel.
 3. Open BeatMarker.
 4. Click `Choose file`.
 5. Select the same audio file used by the After Effects layer.
@@ -85,11 +85,10 @@ Window > Extensions (Legacy) > BeatMarker
 7. Click `Analyze beats`.
 8. Check the waveform and beat lines.
 9. Adjust sensitivity or offset if necessary.
-10. Click `Write beat markers`.
+10. Confirm that the intended composition is active.
+11. Click `Write beat markers`.
 
-The markers will be written to the selected audio layer.
-
-If no audio layer is selected, BeatMarker writes markers to the active composition instead.
+With an audio layer selected, `Write beat markers` writes markers to that layer. With no audio layer selected, it writes markers to the active composition.
 
 ## Controls
 
