@@ -273,11 +273,8 @@ The panel asks the user to choose the audio file separately instead of decoding 
 
 The editable showcase project is in `showcase-video/`.
 
-The final promotional video is:
-
-```text
-showcase-video/renders/beatmarker-promo.mp4
-```
+Rendered video output is not included in the repository. Use the showcase project's
+render command to generate the promotional video locally.
 
 It is a 30-second, 1920x1080, 30 FPS H.264/AAC motion-graphics promo using the supplied BeatMarker screenshots, synchronized scene-specific voiceover, music, waveform motion, marker animations, callouts, and an animated end card.
 
