@@ -90,6 +90,9 @@ Window > Extensions (Legacy) > BeatMarker
 
 With an audio layer selected, `Write beat markers` writes markers to that layer. With no audio layer selected, it writes markers to the active composition.
 
+After writing the markers, scrub the timeline to confirm their positions. If the
+beats are consistently early or late, set `Start offset` and analyze again.
+
 ## Controls
 
 ### BPM override
