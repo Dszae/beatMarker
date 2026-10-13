@@ -303,6 +303,11 @@ The panel was opened in a normal browser. Open it from After Effects instead.
 
 Open a composition and make it active before opening or refreshing BeatMarker.
 
+### No audio is available for analysis
+
+Select the audio layer in the Timeline panel and choose the matching source file
+in BeatMarker before clicking `Analyze beats`.
+
 ### Markers go to the composition instead of the audio layer
 
 Select the audio layer in the Timeline panel before clicking `Write beat markers`.
