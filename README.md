@@ -73,6 +73,9 @@ Depending on your After Effects version, the menu may appear under:
 Window > Extensions (Legacy) > BeatMarker
 ```
 
+Verify the installation by opening a composition, selecting an audio layer, and
+confirming that the BeatMarker panel loads before continuing to the usage steps.
+
 ## How To Use It
 
 1. Open the composition you want to edit.
