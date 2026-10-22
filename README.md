@@ -1,4 +1,4 @@
-# BeatMarker for After Effects
+# BeatMarker for After Effects:
 
 BeatMarker is a dockable After Effects panel that analyzes music and places beat markers on an After Effects audio layer or composition timeline.
 
