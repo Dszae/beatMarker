@@ -5,6 +5,6 @@
   "description": "After Effects CEP panel for audio beat detection and marker placement",
   "scripts": {
     "check": "node --check beat-detection.js && node --check panel.js",
-    "test": "node --test test/beat-detection.test.js"
+    "test": "node --test test/beat-detection.test.js test/host.test.js"
   }
 }

@@ -36,6 +36,17 @@ function getTargetInfo() {
     });
 }
 
+// Beat times are measured from the start of the audio file. setValueAtTime on a
+// layer's markers takes composition time, so a beat plays at the layer's start
+// plus its file time, scaled by the layer's time stretch. Composition markers
+// have no layer to follow and use the beat time as it is.
+function compTimeOfBeat(layer, fileTime) {
+    if (!layer) {
+        return fileTime;
+    }
+    return layer.startTime + fileTime * (layer.stretch / 100);
+}
+
 function writeBeatMarkers(payload) {
     var data = JSON.parse(payload);
     var target = getActiveTarget();
@@ -54,7 +65,7 @@ function writeBeatMarkers(payload) {
             var beat = data.beats[i];
             var marker = new MarkerValue("Beat " + (i + 1) + " | " + data.bpm.toFixed(1) + " BPM");
             marker.duration = 0;
-            markerProperty.setValueAtTime(beat.time, marker);
+            markerProperty.setValueAtTime(compTimeOfBeat(target.layer, beat.time), marker);
         }
         return JSON.stringify({
             ok: true,
