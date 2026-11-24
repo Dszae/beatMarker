@@ -323,3 +323,7 @@ Use `Start offset` in milliseconds and analyze again.
 ## License
 
 No license has been selected yet. Add a license before publishing a public release if you want others to legally reuse or modify the code.
+
+## Author
+
+Built by **Dipesh Sapkota** ([@Dszae](https://github.com/Dszae)), a Computer Engineering student at IOE Thapathali Campus, Kathmandu, Nepal. More projects at [dipeshsapkota7.com.np](https://www.dipeshsapkota7.com.np/).
